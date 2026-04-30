@@ -1,0 +1,81 @@
+{
+  "Logistic Regression (L1)": {
+    "penalty": "l1",
+    "solver": "saga",
+    "C": 0.5,
+    "max_iter": 500,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "Random Forest": {
+    "n_estimators": 100,
+    "max_depth": 10,
+    "min_samples_leaf": 20,
+    "class_weight": "balanced",
+    "n_jobs": -1,
+    "random_state": 42
+  },
+  "XGBoost (Optuna)": {
+    "n_est": 136,
+    "depth": 3,
+    "lr": 0.043127706008471954,
+    "sub": 0.8574269294896714,
+    "col": 0.7727780074568463,
+    "mcw": 12,
+    "lam": 3.0980791841396598,
+    "scale_pos_weight": 1.1213406873143827,
+    "eval_metric": "auc",
+    "n_jobs": -1,
+    "random_state": 42
+  },
+  "MLP (sklearn)": {
+    "hidden_layer_sizes": [
+      64,
+      32
+    ],
+    "alpha": 0.001,
+    "max_iter": 100,
+    "early_stopping": true,
+    "validation_fraction": 0.15,
+    "random_state": 42,
+    "verbose": false
+  },
+  "CNN (1D Conv)": {
+    "filters": [
+      32,
+      16
+    ],
+    "kernel_size": 2,
+    "dense_units": 32,
+    "dropout": 0.3,
+    "optimizer": "Adam(lr=1e-3)",
+    "epochs": 20,
+    "batch_size": 64,
+    "epochs_trained": 20
+  },
+  "RNN (SimpleRNN)": {
+    "rnn_units": [
+      32,
+      16
+    ],
+    "dense_units": 16,
+    "dropout": 0.25,
+    "optimizer": "Adam(lr=1e-3)",
+    "epochs": 20,
+    "batch_size": 64,
+    "epochs_trained": 20
+  },
+  "LSTM (BiDir)": {
+    "bilstm_units": 32,
+    "lstm_units": 16,
+    "dense_units": [
+      32,
+      16
+    ],
+    "dropout": 0.25,
+    "optimizer": "Adam(lr=5e-4)",
+    "epochs": 20,
+    "batch_size": 64,
+    "epochs_trained": 20
+  }
+}

@@ -1,0 +1,38 @@
+# ════════════════════════════════════════════════════
+# ข้อมูลส่วนบุคคล – ห้าม upload เด็ดขาด (PDPA)
+# ════════════════════════════════════════════════════
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.pkl
+*.pickle
+data/
+raw_data/
+dataset/
+
+# Output files (สร้างขึ้นตอนรัน)
+*.png
+*.jpg
+high_risk_*.csv
+full_predictions*.csv
+model_metrics*.csv
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Python env
+venv/
+.env
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Google Colab credentials
+token.json
+credentials.json
